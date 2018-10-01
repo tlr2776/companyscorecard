@@ -5,11 +5,13 @@
  */
 package companyscorecard;
 
+import dashparser.DashParser;
+
 /**
  *
  * @author tara
  */
-public class Parser extends dashparser.DashParser {
+public class Parser extends DashParser {
 
     public Parser() {
         super();

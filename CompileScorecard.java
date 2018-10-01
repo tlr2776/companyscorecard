@@ -6,7 +6,7 @@
 package companyscorecard;
 
 import dashparser.Job;
-import java.io.IOException;
+import dashparser.DashParser;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -27,7 +27,6 @@ public class CompileScorecard {
     private LocalDate lastDate;
 
     //these division ints are the counts for each, which will be reset after every run
-    private HashMap<Integer, String> divKeys;
     private int bu;
     private int content;
     private int fire;
@@ -40,7 +39,7 @@ public class CompileScorecard {
     private WriteCard w;
 
     public CompileScorecard() {
-        jobList = dashparser.DashParser.getJobList();
+        jobList = DashParser.getJobList();
         today = LocalDate.now();
 
         w = new WriteCard();

@@ -57,7 +57,7 @@ public class CompileScorecard {
         if (lastDate == null) {
             System.out.println("Failed to find previous Friday.");
         } else {
-            firstDate = lastDate.minusDays(6); //TODO check that this works out correctly
+            firstDate = lastDate.minusDays(6);
         }
         System.out.println("Searching in date range of " + firstDate.toString() + " to " + lastDate.toString());
 

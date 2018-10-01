@@ -10,7 +10,6 @@ import dashparser.DashParser;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * This is intended to create a simple txt file that can be copy/pasted into a
